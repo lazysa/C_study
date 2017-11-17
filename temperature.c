@@ -14,20 +14,17 @@ int main(void) {
 // Use while loop
     upper = 300; // 温度表的下限    
     step = 20; // 步长    
-    while ( fahr <= upper ) {
-        celsius = 5 * (fahr-32) / 9;
-        printf("%3d\t%6d\n", fahr, celsius);    // 分别打印3位十进制，6位十进制宽度
+    while (fahr <= upper) {
+        printf("%3d\t%6.1f\n", fahr, (5.0/9.0)*(fahr-32));    // 分别打印3位宽度的十进制和6位宽度、小数点后1位的浮点数
         fahr += step;
     }
 */
 
 // Use for loop
     fahr = lower;
-    for ( fahr = 0; fahr <= 300; fahr += 20 ) {
-        celsius = 5 * (fahr-32) / 9;
-        printf("%3d\t%6d\n", fahr, celsius);    // 分别打印3位十进制，6位十进制宽度
+    for (fahr = 300; fahr >= 0; fahr -= 20) {
+        printf("%3d\t%6.1f\n", fahr, (fahr-32)*(5.0/9.0));    // 分别打印3位宽度的十进制和6位宽度、小数点后1位的浮点数
     }
-
 
     return 0;
 }
