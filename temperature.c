@@ -9,16 +9,26 @@ int main(void) {
     int lower, upper, step;
 
     lower = 0;  /* 温度表的下限 */
-    upper = 300; /* 温度表的下限 */
-    step = 20; /* 步长 */
 
+/*
+// Use while loop
+    upper = 300; // 温度表的下限    
+    step = 20; // 步长    
+    while ( fahr <= upper ) {
+        celsius = 5 * (fahr-32) / 9;
+        printf("%3d\t%6d\n", fahr, celsius);    // 分别打印3位十进制，6位十进制宽度
+        fahr += step;
+    }
+*/
+
+// Use for loop
     fahr = lower;
-    //while (fahr <= upper) {
     for ( fahr = 0; fahr <= 300; fahr += 20 ) {
         celsius = 5 * (fahr-32) / 9;
-        printf("%3d\t%6d\n", fahr, celsius);    /*分别打印3位十进制，6位十进制宽度*/
-    //    fahr = fahr + step;
+        printf("%3d\t%6d\n", fahr, celsius);    // 分别打印3位十进制，6位十进制宽度
     }
+
+
     return 0;
 }
 
