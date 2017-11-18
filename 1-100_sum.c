@@ -4,24 +4,29 @@
 计算1~100之和 */
 
 int main(void) {
-    int a, sum;    // 声明变量
-    sum = 0;
-    
-// Use while loop  
-    a = 0;
-    while ( a <= 100) {
-        sum += a;
-        a += 1;
-    }
+    int first, sum=0;            // 声明并定义变量
+    first = 1;
+    #define LAST 100
+    #define STEP 1 
 
-/*
-// Use for loop 
-    for ( a=0; a<=100; a++ ) {
-        sum += a;               
+/* 
+// Use while loop  
+    while ( first <= LAST) {
+        sum += first;
+        first += STEP;
     }
 */
 
+// Use for loop 
+    for ( first=0; first<=LAST; first++ ) {
+        sum += first;               
+    }
+
+// 用高斯求和公式
+//printf("%3d\n", (first + LAST) * (LAST / 2 ));   
+
 printf("%3d\n", sum);   
 }
+
 
 
