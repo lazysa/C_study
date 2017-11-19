@@ -11,14 +11,14 @@ int main(void) {
 
 /* 
 // Use while loop  
-    while ( first <= LAST) {
+    while (first <= LAST) {
         sum += first;
         first += STEP;
     }
 */
 
 // Use for loop 
-    for ( first=0; first<=LAST; first++ ) {
+    for (first=0; first<=LAST; first++) {
         sum += first;               
     }
 
