@@ -4,7 +4,8 @@
 getchar putchar 函数默认都只能操作1个字符
 */
 
-int main (void) {
+int main(void) 
+{
     int io;
     // printf("EOF is: %d\n", EOF);                 // 打印 EOF 的值
 

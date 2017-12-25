@@ -3,7 +3,8 @@
 /* 对fahr = 0, 20, ..., 300
 打印华氏温度与摄氏温度对照表 */
 
-int main(void) {
+int main(void) 
+{
     /* 开始声明变量 */
     int fahr; 
     #define LOWER 0             // 温度表的下限 , 推荐使用符号常量
