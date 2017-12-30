@@ -19,7 +19,7 @@ int main(void)
 */
 
 // Use for loop 
-    for (first=0; first<=LAST; first++) {
+    for (first = 0; first <= LAST; first++) {
         sum += first;               
     }
    
